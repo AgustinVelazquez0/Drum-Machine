@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import DrumPad from "../components/DrumPad";
 import { drumPads } from "./assets/sounds";
-import Recorder from "../components/Recorder"; // Importamos el componente Recorder
 import "./App.css";
 
 const App = () => {
@@ -44,13 +43,6 @@ const App = () => {
           />
         ))}
       </div>
-
-      {/* Integración del componente Recorder */}
-      <Recorder
-        onRecordingComplete={(audioBlob) =>
-          console.log("Recording complete", audioBlob)
-        }
-      />
     </div>
   );
 };
